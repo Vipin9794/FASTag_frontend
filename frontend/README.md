@@ -36,7 +36,7 @@ frontend/
 ├── public/
 │ └── Logo.png
 ├── src/
-│ ├── components/
+│ ├── components/   # components (Heder ,  BankCard, Slidbar)
 │ │ ├── Header.jsx
 │ │ ├── BankCard.jsx
 │ │ └── Slidbar.jsx
