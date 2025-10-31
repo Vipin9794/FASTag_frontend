@@ -1,0 +1,33 @@
+{
+  "name": "FASTag Recharge App",
+  "short_name": "FASTag",
+  "description": "Recharge your FASTag online securely with LogicLead.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a73e8",
+  "icons": [
+    {
+      "src": "/icons/iconL-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+   "screenshots": [
+    {
+      "src": "/image.png",
+      "sizes": "1919x960",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+    
+     
+  ]
+  
+  
+}
