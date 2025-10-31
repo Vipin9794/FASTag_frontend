@@ -22,7 +22,7 @@ This app allows users to recharge their FASTag, manage profiles, and view rechar
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, React Router, Context API, React Toastify  
+- **Frontend:** React.js, React Router, Context API, React Toastify 
 - **Icons:** React Icons (Fa)
 - **Styling:** CSS / TailwindCSS (as per setup)
 - **State Management:** useContext + useReducer
