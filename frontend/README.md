@@ -32,6 +32,8 @@ This app allows users to recharge their FASTag, manage profiles, and view rechar
 
 ## 📁 Folder Structure
 
+
+
 frontend/
 ├── public/
 │ └── Logo.png
@@ -69,7 +71,6 @@ frontend/
 │ └── main.css
 ├── package.json
 └── README.md
-
 
 
 
