@@ -1,16 +1,125 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚗 FASTag Recharge Web App
 
-## React Compiler
+A full-featured FASTag Recharge web application built using **React.js** and **Context API**.  
+This app allows users to recharge their FASTag, manage profiles, and view recharge history — all from one dashboard.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ⚙️ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- 🔐 **Login / Logout System**
+- 🪪 **User Profile Management**
+- 💳 **FASTag Recharge System**
+- 🧾 **Recharge History Tracking**
+- 📱 **Responsive Design (Mobile + Desktop)**
+- ⚡ **Toast Notifications**
+- 🌀 **Loading State Management**
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, React Router, Context API, React Toastify  
+- **Icons:** React Icons (Fa)
+- **Styling:** CSS / TailwindCSS (as per setup)
+- **State Management:** useContext + useReducer
+- **Build Tool:** Vite / CRA (based on your setup)
+
+---
+
+## 📁 Folder Structure
+
+frontend/
+├── public/
+│ └── Logo.png
+├── src/
+│ ├── components/
+│ │ ├── Header.jsx
+│ │ ├── BankCard.jsx
+│ │ └── Slidbar.jsx
+│ ├── context/
+│ │ ├── RechargeContext.jsx
+| | ├── WalletContext.jsx
+│ │ └── UserProfile.jsx
+│ ├── layouts/
+│ │ ├── Dashboard.jsx
+│ │ ├── DashboardLayout.jsx
+│ │ ├── FqcSection.jsx
+│ │ ├── Footer.jsx
+│ │ ├── HeroDash.jsx
+│ │ └── Navbar.jsx
+│ ├── pages/
+│ │ ├── AddMoneyPopup.jsx
+│ │ ├── BankListSection.jsx
+│ │ ├── FastagRecharge.jsx
+│ │ ├── Home.jsx
+│ │ ├── Login.jsx
+│ │ ├── RechargeHistory.jsx
+│ │ ├── RechargeMoney.jsx
+│ │ ├── Support.jsx
+│ │ ├── UserProfileModel.jsx
+│ │ └── WalleteHistory.jsx
+│ ├── App.jsx
+│ ├── index.jsx
+| ├── index.html
+│ └── styles/
+│ └── main.css
+├── package.json
+└── README.md
+
+
+
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to set up the project locally 👇
+
+### 1️⃣ Clone the Repository
+```bash
+git clone  https://github.com/Vipin9794/FASTag_frontend.git
+
+
+2️⃣ Navigate to the Project Folder
+
+cd frontend
+
+3️⃣ Install Dependencies
+
+npm install
+
+4️⃣ Run the Project
+
+npm run dev
+
+
+Your app will start on 👉 http://localhost:5173
+
+
+# Usage
+
+Login/Register using your credentials
+
+Enter vehicle number and recharge amount
+
+Confirm recharge → check your Recharge History
+
+Update your Profile only once (if not already done)
+
+🔔 Toast Messages
+
+Error messages when fields are empty
+
+Success messages after recharge and profile updates
+
+
+📜 License
+
+---MIT License
+
+
+
