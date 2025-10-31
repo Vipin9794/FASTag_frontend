@@ -1,7 +1,3 @@
-
-
-
-
 import React, { useState, useEffect } from "react";
 import { FaSpinner, FaCheckCircle } from "react-icons/fa";
 import { useRecharge } from "../context/RechargeContext";
@@ -13,7 +9,9 @@ const RechargeMoney = ({ isOpen, onClose, selectedBank, vehicleNo }) => {
   const { addRecharge } = useRecharge();
 
   const [selectedAmount, setSelectedAmount] = useState(500);
-  const [paymentMethod, setPaymentMethod] = useState(selectedBank || "Axis Bank");
+  const [paymentMethod, setPaymentMethod] = useState(
+    selectedBank || "Axis Bank"
+  );
   const [isPaying, setIsPaying] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
 
@@ -64,7 +62,9 @@ const RechargeMoney = ({ isOpen, onClose, selectedBank, vehicleNo }) => {
 
         {!isSuccess ? (
           <>
-            <h2 className="text-2xl font-bold text-center mb-5 text-blue-900">Add Money</h2>
+            <h2 className="text-2xl font-bold text-center mb-5 text-blue-900">
+              Add Money
+            </h2>
 
             <div className="flex justify-center gap-3 mb-4">
               {[500, 1000, 1500, 2000].map((amt) => (
@@ -92,7 +92,9 @@ const RechargeMoney = ({ isOpen, onClose, selectedBank, vehicleNo }) => {
               placeholder="Enter Amount"
             />
 
-            <label className="block text-gray-700 font-medium mb-1">Payment Method</label>
+            <label className="block text-gray-700 font-medium mb-1">
+              Payment Method
+            </label>
             <select
               value={paymentMethod}
               onChange={(e) => setPaymentMethod(e.target.value)}
@@ -103,13 +105,19 @@ const RechargeMoney = ({ isOpen, onClose, selectedBank, vehicleNo }) => {
               <option>HDFC Bank</option>
               <option>ICICI Bank</option>
               <option>PNB Bank</option>
+              <option>Paytm Payments Bank</option>
+              <option>Jio Payments Bank</option>
+              <option>Union Bank</option>
+              <option>Bank of Baroda</option>
             </select>
 
             <button
               onClick={handlePayment}
               disabled={isPaying}
               className={`w-full py-3 rounded-md text-white font-semibold transition-all ${
-                isPaying ? "bg-blue-800 cursor-not-allowed" : "bg-blue-900 hover:bg-[#006d61]"
+                isPaying
+                  ? "bg-blue-800 cursor-not-allowed"
+                  : "bg-blue-900 hover:bg-blue-800"
               }`}
             >
               {isPaying ? (
@@ -124,13 +132,15 @@ const RechargeMoney = ({ isOpen, onClose, selectedBank, vehicleNo }) => {
         ) : (
           <div className="text-center py-8">
             <FaCheckCircle className="text-green-600 text-5xl mx-auto mb-3" />
-            <h2 className="text-2xl font-bold text-green-700">Payment Successful!</h2>
+            <h2 className="text-2xl font-bold text-green-700">
+              Payment Successful!
+            </h2>
             <p className="text-gray-600 mt-2">
               ₹{selectedAmount} added successfully via {paymentMethod}.
             </p>
             <button
               onClick={onClose}
-              className="mt-6 bg-blue-900 hover:bg-[#006d61] text-white px-5 py-2 rounded-lg"
+              className="mt-6 bg-blue-900 hover:bg-blue-800 text-white px-5 py-2 rounded-lg"
             >
               Close
             </button>

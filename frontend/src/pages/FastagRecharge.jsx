@@ -60,7 +60,7 @@ export default function FastagRecharge({ selectedBank, onEdit }) {
 
           <button
             onClick={handleNext}
-            className="bg-blue-900 hover:bg-[#006d61] text-white w-full py-2 rounded-lg font-semibold"
+            className="bg-blue-900 hover:bg-blue-800 text-white w-full py-2 rounded-lg font-semibold"
           >
             NEXT
           </button>

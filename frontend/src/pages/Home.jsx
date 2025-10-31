@@ -3,7 +3,7 @@ import { FaTag, FaCrown, FaRupeeSign } from "react-icons/fa";
 import { BiSolidBank } from "react-icons/bi";
 import { MdOutlinePhoneAndroid } from "react-icons/md";
 import { GoSearch } from "react-icons/go";
-import FaqSection from "../layouts/FaqSection"
+import FaqSection from "../layouts/FaqSection";
 import BankListSection from "./BankListSection";
 // const bankList = [
 //   { name: "Axis Bank", logo: "/axis.png" },
@@ -50,7 +50,7 @@ const Premium = [
 const Home = () => {
   return (
     <div className="bg-blue-30">
-      <BankListSection/>
+      <BankListSection />
       {/* <div className="mt-6 ">
         <div className="mb-6">
           <h3 className="text-center text-bg-neutral-800 font-bold mb-1 ">
@@ -119,8 +119,6 @@ const Home = () => {
             </h3>
           </div>
         </div>
-
-
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {Premium.map((premium, i) => (
