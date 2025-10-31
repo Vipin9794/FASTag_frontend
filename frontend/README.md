@@ -30,7 +30,7 @@ This app allows users to recharge their FASTag, manage profiles, and view rechar
 
 ---
 
-## 📁 Folder Structure
+
 ## 🧩 Project Structure
 
 ```bash
@@ -72,44 +72,6 @@ frontend/
 ├── package.json
 └── README.md
 
-
-frontend/
-├── public/
-│   └── Logo.png
-├── src/
-│   ├── components/              # Reusable components (Header, BankCard, Sidebar)
-│   │   ├── Header.jsx
-│   │   ├── BankCard.jsx
-│   │   └── Slidbar.jsx
-│   ├── context/                 # Global state management using React Context API
-│   │   ├── RechargeContext.jsx
-│   │   ├── WalletContext.jsx
-│   │   └── UserProfile.jsx
-│   ├── layouts/                 # Page layouts and UI sections
-│   │   ├── Dashboard.jsx
-│   │   ├── DashboardLayout.jsx
-│   │   ├── FqcSection.jsx
-│   │   ├── Footer.jsx
-│   │   ├── HeroDash.jsx
-│   │   └── Navbar.jsx
-│   ├── pages/                   # App pages and popups
-│   │   ├── AddMoneyPopup.jsx
-│   │   ├── BankListSection.jsx
-│   │   ├── FastagRecharge.jsx
-│   │   ├── Home.jsx
-│   │   ├── Login.jsx
-│   │   ├── RechargeHistory.jsx
-│   │   ├── RechargeMoney.jsx
-│   │   ├── Support.jsx
-│   │   ├── UserProfileModel.jsx
-│   │   └── WalleteHistory.jsx
-│   ├── App.jsx
-│   ├── index.jsx
-│   ├── index.html
-│   └── styles/
-│       └── main.css
-├── package.json
-└── README.md
 
 
 
