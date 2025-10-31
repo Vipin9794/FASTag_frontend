@@ -15,6 +15,8 @@ This app allows users to recharge their FASTag, manage profiles, and view rechar
 - 💳 **FASTag Recharge System**
 - 🧾 **Recharge History Tracking**
 - 📱 **Responsive Design (Mobile + Desktop)**
+- 🌐 PWA supported (Add to Home Screen)  
+- ⚡ Fast and lightweight frontend
 - ⚡ **Toast Notifications**
 - 🌀 **Loading State Management**
 
