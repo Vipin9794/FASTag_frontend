@@ -22,6 +22,11 @@
     {
       "src": "/image.png",
       "sizes": "1919x960",
+      "type": "image/png"
+    },
+    {
+      "src": "/image.png",
+      "sizes": "1919x960",
       "type": "image/png",
       "form_factor": "wide"
     }
