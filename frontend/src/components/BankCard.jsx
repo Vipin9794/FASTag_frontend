@@ -8,11 +8,9 @@ const BankCard = ({ bank} ) => {
         alt={bank.name}
         className="w-16 h-16 object-contain"
       />
-
       {/* Bank Name (Right Side) */}
       <h3 className="font-medium text-lg text-gray-800">{bank.name}</h3>
     </div>
-    
     </div>
   );
 };
